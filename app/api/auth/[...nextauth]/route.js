@@ -8,8 +8,8 @@ import CredentialsProvider from "next-auth/providers/credentials";
 const githubHandler = NextAuth({
   providers: [
     GithubProvider({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
+      clientId: process.env.GITHUB_ID_PRODUCTION,
+      clientSecret: process.env.GITHUB_SECRET_PRODUCTION,
     }),
     CredentialsProvider({
       name: "Credentials",
